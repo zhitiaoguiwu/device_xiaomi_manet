@@ -1,0 +1,3 @@
+# The Goodix FOD HAL switches its capture thread to SCHED_FIFO while the
+# local-HBM illumination window is active.
+allow hal_fingerprint_default self:capability sys_nice;

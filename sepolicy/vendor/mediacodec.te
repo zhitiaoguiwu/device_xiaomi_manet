@@ -1,0 +1,2 @@
+# Qualcomm codecs inspect display capabilities when selecting output formats.
+get_prop(mediacodec, vendor_display_prop)

@@ -1,0 +1,11 @@
+# Qualcomm's display boot script resets this property to 0 on pineapple.
+# Its target-version assignment happens after that reset, so use it as the
+# deterministic restore trigger instead of depending on service-state timing.
+on property:vendor.display.target.version=4
+    setprop vendor.display.enable_fb_scaling 1
+
+# StorageManager does not enqueue the primary emulated-volume mount on this
+# device during boot. Trigger the same framework mount operation after the
+# system is fully booted so apps get a usable external-files directory.
+on property:sys.boot_completed=1
+    exec_background -- /system/bin/sm mount "emulated;0"

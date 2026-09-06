@@ -1,0 +1,1 @@
+type vendor_xiaomi_virtual_camera_service, hal_service_type, protected_service, service_manager_type;

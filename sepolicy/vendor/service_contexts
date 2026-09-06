@@ -1,0 +1,2 @@
+vendor.xiaomi.hardware.camera.synthetic.IVirtualCameraRegistrar/default u:object_r:vendor_xiaomi_virtual_camera_service:s0
+vendor.xiaomi.hardware.soterservice.ISoter/default u:object_r:vendor_hal_soteraidl_service:s0

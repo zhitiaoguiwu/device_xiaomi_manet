@@ -17,14 +17,12 @@ $(call inherit-product, device/xiaomi/manet/device.mk)
 ## Device identifier
 PRODUCT_DEVICE := manet
 PRODUCT_NAME := lineage_manet
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := 23127PN0CG
-PRODUCT_MANUFACTURER := xiaomi
+PRODUCT_BRAND := Redmi
+PRODUCT_MODEL := 23117RK66C
+PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc=$(call normalize-path-list, "manet manet 15 BP2A.250605.031.A3 OS3.0.4.0.WNMCNXM release-keys")
-
-BUILD_FINGERPRINT := Redmi/manet/manet:14/BP2A.250605.031.A3/OS3.0.4.0.WNMCNXM:user/release-keys
+    BuildFingerprint=Redmi/manet/manet:14/UKQ1.240624.001/OS3.0.305.0.WNMCNXM:user/release-keys
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi

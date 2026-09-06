@@ -1,0 +1,2 @@
+# The display boot service initializes Xiaomi display feature properties.
+set_prop(qti_display_boot, vendor_displayfeature_prop)

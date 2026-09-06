@@ -1,0 +1,2 @@
+# Allow adb shell to inspect the display feature properties during bring-up.
+get_prop(shell, vendor_displayfeature_prop)

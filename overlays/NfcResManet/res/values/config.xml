@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- The device has an NFC controller and an eSE-backed secure element. -->
+    <string-array name="config_skuSupportsSecureNfc" translatable="false">
+        <item>flourite</item>
+    </string-array>
+</resources>

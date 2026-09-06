@@ -1,9 +1,9 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from Redmi K70 Pro (OS3.0.4.0.WNMCNXM)
+## are from Redmi K70 Pro (OS3.0.305.0.WNMCNXM)
 
 # ACDB
-odm/etc/acdbdata/Forte/Forte_acdb_cal.acdb:vendor/etc/acdbdata/pineapple_mtp/Forte_acdb_cal.acdb
-odm/etc/acdbdata/Forte/Forte_workspaceFileXml.qwsp:vendor/etc/acdbdata/pineapple_mtp/Forte_workspaceFileXml.qwsp
+odm/etc/acdbdata/Forte/Forte_acdb_cal.acdb:odm/etc/acdbdata/pineapple_mtp/Forte_acdb_cal.acdb
+odm/etc/acdbdata/Forte/Forte_workspaceFileXml.qwsp:odm/etc/acdbdata/pineapple_mtp/Forte_workspaceFileXml.qwsp
 
 # ADSP modules
 odm/etc/audio/misound_karaokemix_res.bin
@@ -128,11 +128,10 @@ vendor/lib64/rfs/dsp/libvpp_svc_skel.so
 vendor/lib64/rfs/dsp/libvpp_vqa_networks.so
 vendor/lib64/rfs/dsp/libvpt_action_recognition.so
 vendor/lib64/rfs/dsp/libworker_pool.so
-odm/lib64/se_algo/libQnnHtpNetRunExtensions.so;MODULE_SUFFIX=_xiaomi
-odm/lib64/se_algo/libQnnHtp.so;MODULE_SUFFIX=_xiaomi
-odm/lib64/se_algo/libQnnHtpV75Skel.so;MODULE_SUFFIX=_xiaomi
-odm/lib64/se_algo/libQnnHtpV75Stub.so;MODULE_SUFFIX=_xiaomi
-odm/lib64/se_algo/libQnnSystem.so;MODULE_SUFFIX=_xiaomi
+
+# Audio HAL
+vendor/lib64/libar-pal.so
+vendor/lib64/liblx-osal.so:vendor/lib64/liblx-osal-manet.so
 
 # Audio firmware
 odm/firmware/B-cs35l43-delta-movie-spk-prot.bin
@@ -791,7 +790,6 @@ odm/lib64/camera/plugins/com.xiaomi.plugin.swflip.so
 odm/lib64/camera/plugins/com.xiaomi.plugin.tsskinbeautifier.so
 
 # Camera ODM
-odm/data/model/seg_quantized.serialized.8650.pertensor_512_cls3r.bin
 odm/lib64/camx.device-impl.so
 odm/lib64/camx.provider-impl.so
 odm/lib64/com.qti.camx.chiiqutils.so;DISABLE_CHECKELF
@@ -1033,7 +1031,7 @@ vendor/lib64/libSNPESample.so
 vendor/lib64/libtracker_6dof_impl.so
 
 # Displayfeature (configs)
-odm/etc/df_default.xml
+# NOTE: df_default.xml lives in vendor/xiaomi/sm8650-common (family common)
 odm/etc/disp0/mdss_dsi_n11u_42_02_0a_dsc_cmd/cct_pcc.txt
 odm/etc/disp0/mdss_dsi_n11u_42_02_0a_dsc_cmd/clstc/clstc_gc_0.txt
 odm/etc/disp0/mdss_dsi_n11u_42_02_0a_dsc_cmd/clstc/clstc_igc_0.txt
@@ -1182,3 +1180,38 @@ odm/firmware/2_tick_P_RTP.bin:vendor/etc/vibrator/effect_2.bin
 odm/firmware/3_thud_P_RTP.bin:vendor/etc/vibrator/effect_3.bin
 odm/firmware/4_pop_P_RTP.bin:vendor/etc/vibrator/effect_4.bin
 odm/firmware/5_heavyClick_P_RTP.bin:vendor/etc/vibrator/effect_5.bin
+
+# QCC system HAL (system_ext)
+system_ext/app/QCC/QCC.apk
+system_ext/bin/qccsyshal@1.2-service
+system_ext/bin/qccsyshal_aidl-service
+system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc
+system_ext/etc/init/vendor.qti.qccsyshal_aidl-service.rc
+system_ext/etc/permissions/com.qti.qcc.vendor_qcc.xml
+system_ext/etc/vintf/manifest/vendor.qti.qccsyshal_aidl-service.xml
+system_ext/lib/libqcc.so
+system_ext/lib/libqcc_file_agent_sys.so
+system_ext/lib/libqcc_netstats.so
+system_ext/lib/libqccdme.so
+system_ext/lib/libqccfileservice.so
+system_ext/lib/vendor.qti.hardware.qccsyshal@1.0.so;MODULE_SUFFIX=-system_ext
+system_ext/lib/vendor.qti.hardware.qccsyshal@1.1.so;MODULE_SUFFIX=-system_ext
+system_ext/lib/vendor.qti.hardware.qccsyshal@1.2-halimpl.so
+system_ext/lib/vendor.qti.hardware.qccsyshal@1.2.so;MODULE_SUFFIX=-system_ext
+system_ext/lib/vendor.qti.hardware.qccvndhal@1.0.so
+system_ext/lib/vendor.qti.qccsyshal_aidl-V1-ndk.so
+system_ext/lib/vendor.qti.qccsyshal_aidl-halimpl.so
+system_ext/lib/vendor.qti.qccvndhal_aidl-V1-ndk.so;MODULE_SUFFIX=-system_ext
+system_ext/lib64/libqcc.so
+system_ext/lib64/libqcc_file_agent_sys.so
+system_ext/lib64/libqcc_netstats.so
+system_ext/lib64/libqccdme.so
+system_ext/lib64/libqccfileservice.so
+system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0.so;MODULE_SUFFIX=-system_ext
+system_ext/lib64/vendor.qti.hardware.qccsyshal@1.1.so;MODULE_SUFFIX=-system_ext
+system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so
+system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2.so;MODULE_SUFFIX=-system_ext
+system_ext/lib64/vendor.qti.hardware.qccvndhal@1.0.so
+system_ext/lib64/vendor.qti.qccsyshal_aidl-V1-ndk.so
+system_ext/lib64/vendor.qti.qccsyshal_aidl-halimpl.so
+system_ext/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so;MODULE_SUFFIX=-system_ext

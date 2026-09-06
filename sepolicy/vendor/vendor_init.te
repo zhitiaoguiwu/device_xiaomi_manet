@@ -1,0 +1,3 @@
+# The ODM display init action restores Xiaomi's framebuffer scaling policy
+# after qti_display_boot has finished.
+set_prop(vendor_init, vendor_displayfeature_prop)

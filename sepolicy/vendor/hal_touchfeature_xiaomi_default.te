@@ -1,0 +1,3 @@
+# TouchFeature subscribes to the framework sensor manager for touch gestures.
+allow hal_touchfeature_xiaomi_default fwk_sensor_hwservice:hwservice_manager find;
+binder_call(hal_touchfeature_xiaomi_default, system_server)

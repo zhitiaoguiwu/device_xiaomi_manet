@@ -1,0 +1,24 @@
+# Device
+# Note: kept as a "global" variant so MiuiCamera treats this as a global build
+# and skips the CN "user agreement" (CTA) flow, which requires the missing
+# com.miui.securitycenter package.
+ro.product.mod_device=manet_global
+
+# Camera
+persist.vendor.camera.privapp.list=com.android.camera,org.lineageos.aperture
+ro.com.google.lens.oem_camera_package=com.android.camera
+# Match stock MIVI camera initialization and logical-camera registration.
+vendor.camera.support.mivi=true
+hypercamera.disable_app_default_config=true
+ro.miui.notch=1
+ro.miui.ui.version.name=V816
+ro.miui.ui.version.code=816
+
+# QTI
+ro.vendor.qti.va_aosp.support=1
+
+# Display density (matches the stock manet profile)
+persist.miui.density_v2=560
+
+# Region - CN device
+ro.miui.build.region=CN

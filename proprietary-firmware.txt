@@ -1,6 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
 ## are from Xiaomi 14 (OS3.0.4.0.WNMCNXM). 
-
 abl.img;AB
 aop.img;AB
 aop_config.img;AB
@@ -13,7 +12,6 @@ hyp.img;AB
 imagefv.img;AB
 keymaster.img;AB
 modem.img;AB
-modemfirmware.img;AB
 qupfw.img;AB
 shrm.img;AB
 tz.img;AB
@@ -22,3 +20,5 @@ uefisecapp.img;AB
 xbl.img;AB
 xbl_config.img;AB
 xbl_ramdump.img;AB
+
+

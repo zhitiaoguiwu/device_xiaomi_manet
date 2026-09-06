@@ -1,0 +1,7 @@
+# GNSS consumes sensor calibration properties and the system DMA heap.
+get_prop(vendor_hal_gnss_qti, vendor_sensors_prop)
+allow vendor_hal_gnss_qti dmabuf_system_heap_device:chr_file { getattr ioctl open read };
+
+# The QTI GNSS service registers the standard AOSP GNSS AIDL interface so the
+# framework can create the "gps" location provider.
+allow vendor_hal_gnss_qti hal_gnss_service:service_manager add;

@@ -1,0 +1,2 @@
+# Read panel calibration data stored in persist.
+r_dir_file(vendor_hal_displayfeature_xiaomi_default, vendor_persist_display_file)

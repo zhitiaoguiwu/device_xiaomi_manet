@@ -1,0 +1,6 @@
+# Allow the MiVi background service to invoke MiuiCamera's registered callback.
+binder_call(hal_camera_default, platform_app)
+
+# The Xiaomi camera provider publishes its synthetic camera registrar through
+# servicemanager for virtual camera clients.
+add_service(hal_camera_default, vendor_xiaomi_virtual_camera_service)

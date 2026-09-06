@@ -5,4 +5,54 @@
 //
 
 soong_namespace {
+    imports: [
+        "hardware/xiaomi",
+        "vendor/xiaomi/sm8650-common",
+    ],
+}
+
+cc_library_shared {
+    name: "sensors.qsh.manet",
+    vendor: true,
+    relative_install_path: "hw",
+    srcs: ["sensors/QshSensorsSubHal.cpp"],
+    header_libs: [
+        "android.hardware.sensors@2.0-multihal.header",
+        "android.hardware.sensors@2.X-shared-utils",
+    ],
+    shared_libs: [
+        "android.hardware.sensors@1.0",
+        "android.hardware.sensors@2.0",
+        "android.hardware.sensors@2.0-ScopedWakelock",
+        "android.hardware.sensors@2.1",
+        "libdl",
+        "libhidlbase",
+        "liblog",
+        "libutils",
+    ],
+    static_libs: [
+        "android.hardware.sensors@2.X-multihal",
+    ],
+    cflags: [
+        "-Wall",
+        "-Werror",
+        "-Wextra",
+    ],
+}
+
+cc_library {
+    name: "libudfpshandler.manet",
+    stem: "libudfpshandler",
+    device_specific: true,
+    srcs: ["udfps/UdfpsHandler.cpp"],
+    shared_libs: [
+        "libbase",
+    ],
+    static_libs: [
+        "android.hardware.biometrics.fingerprint-V4-ndk",
+    ],
+    header_libs: [
+        "//hardware/xiaomi:xiaomifingerprint_headers",
+    ],
+    defaults: ["xiaomi_hardware_biometrics_config_default"],
 }

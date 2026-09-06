@@ -1,19 +1,40 @@
 # Bluetooth
 bluetooth.device.default_name=Redmi K70 Pro
 
+# Camera
+ro.hardware.camera=xiaomi
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.snapchat.android
+
 # Display
+vendor.display.enable_qsync_timer=1
 vendor.display.enable_spr=1
+vendor.display.enable_fb_scaling=1
+vendor.display.force_lm_to_fb_config=1
+ro.vendor.whitepoint_calibration_enable=false
 ro.vendor.touchfeature.type=247
-persist.vendor.touchfeature.gameturbotool.version=v3
-ro.vendor.mi_sf.gallery_p3_dolby_opt=true
-ro.vendor.display.dobly_dpu.enable=true
+ro.vendor.mi_sf.supported_automode_maxfps_list=60,120
+ro.vendor.mi_sf.support_automode_for_normalfps=true
+ro.vendor.mi_sf.qsync_support=true
+ro.vendor.mi_sf.qsync_support_min_fps_range=10,60
+ro.vendor.mi_sf.ltpo.support=true
+ro.vendor.display.primary_idle_refresh_rate=60,10:528
+ro.vendor.display.idle_default_fps=60
+ro.vendor.display.fod_monitor_default_fps=120
 ro.vendor.dfps.enable=false
+persist.vendor.disable_idle_fps=true
+persist.vendor.disable_idle_fps.threshold=528
 persist.sys.miui_resolution=1080,2400,420
 
 # Fingerprint
 persist.vendor.fingerprint.type=udfps_optical
-persist.vendor.fingerprint.sensor_location=720|2920|109
-
+persist.vendor.fingerprint.sensor_location=720|2880|130
+# Xiaomi's KeyMint/Soter attestation code reads these product identities.
+# They are present in the stock odm build.prop and must be stable across builds.
+ro.product.model_for_attestation=23117RK66C
+ro.product.brand_for_attestation=Redmi
+ro.product.name_for_attestation=manet
+ro.product.device_for_attestation=manet
+ro.product.manufacturer_for_attestation=Xiaomi
 # Marketname
 ro.product.marketname=Redmi K70 Pro
 

@@ -1,0 +1,4 @@
+# MIUI Camera's Qigsaw splits unpack native libraries under app data.
+# These permissions are present in the stock manet system_ext policy.
+allow platform_app app_data_file:file { getattr map execute execute_no_trans };
+allow platform_app privapp_data_file:file { read getattr map execute open };
