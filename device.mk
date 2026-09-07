@@ -13,6 +13,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display/spr_cfg_xiaomi_n11u_42_02_0a_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/spr_cfg_xiaomi_n11u_42_02_0a_cmd_mode_dsc_dsi_panel.xml \
     $(LOCAL_PATH)/configs/init/init.manet-display.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.manet-display.rc
 
+# Use manet's QSSI policy instead of the generic common policy.
+SM8650_AUDIO_POLICY_QSSI := $(LOCAL_PATH)/configs/audio/audio_policy_configuration_pineapple_qssi.xml
+  
 # Inherit from sm8650-common
 $(call inherit-product, device/xiaomi/sm8650-common/common.mk)
 
