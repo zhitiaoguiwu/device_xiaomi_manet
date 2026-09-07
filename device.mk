@@ -15,9 +15,6 @@ PRODUCT_COPY_FILES += \
 
 # Use manet's QSSI policy instead of the generic common policy.
 SM8650_AUDIO_POLICY_QSSI := $(LOCAL_PATH)/configs/audio/audio_policy_configuration_pineapple_qssi.xml
-  
-# Inherit from sm8650-common
-$(call inherit-product, device/xiaomi/sm8650-common/common.mk)
 
 # Inherit from sm8650-common
 $(call inherit-product, device/xiaomi/sm8650-common/common.mk)
