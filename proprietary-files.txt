@@ -147,6 +147,8 @@ odm/firmware/cs35l43-dsp1-spk-prot.wmfw
 # Camera
 odm/bin/hw/misensor_camera
 odm/bin/hw/vendor.qti.camera.provider-service_64
+system_ext/etc/init/init.miui.cameraopt.rc
+system_ext/etc/task_profiles_cameraopt.json
 odm/lib64/vendor.qti.hardware.camera.aon-service-impl.so;DISABLE_CHECKELF
 odm/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so;DISABLE_CHECKELF
 odm/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so;DISABLE_CHECKELF
@@ -156,6 +158,7 @@ odm/lib64/vendor.xiaomi.hardware.bgservice@1.0-impl.so
 odm/lib64/vendor.xiaomi.hardware.bgservice@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.aon-V1-ndk.so
 vendor/lib64/vendor.xiaomi.hardware.quickcamera-V1-ndk.so
+vendor/etc/vintf/manifest/vendor.xiaomi.hardware.quickcamera.xml
 vendor/lib64/vendor.xiaomi.hardware.seccam-V1-ndk.so
 vendor/lib64/vendor.xiaomi.hardware.camera.companion-impl.so
 vendor/lib64/vendor.xiaomi.hardware.camera.companion-V1-ndk.so
