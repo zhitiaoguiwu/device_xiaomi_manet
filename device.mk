@@ -26,9 +26,6 @@ $(call soong_config_set,XIAOMI_BIOMETRICS_FINGERPRINT,IMPL_VER,V2)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/manet/manet-vendor.mk)
 
-# MiuiCamera
-$(call inherit-product, vendor/xiaomi/camera/camera.mk)
-
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
 # Wrap the stock QSH SubHAL so AOSP can register Xiaomi's FOD detector as a

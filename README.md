@@ -18,4 +18,3 @@
 |                         | 12 MP                                                  |
 | Front Camera            | 16 MP                                       |
 | Release Date            | October 2023              
-- 注意los的相机目前由miuicamera代替(不要尝试去维护los相机，除非你能修好)
