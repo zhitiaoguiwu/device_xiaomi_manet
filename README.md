@@ -1,3 +1,8 @@
+# 本人维护的sm8650通用设备树仅在lineageos23.2
+# manet的lineageos24通用设备树将继承https://github.com/lolipuru/device_xiaomi_sm8650-common
+# 但是不继承其vendor,manet的los24设备树是独立的vendor.
+
+
 #  Device Tree for Redmi K70 Pro (Manet)
 
 ## Spec Sheet
