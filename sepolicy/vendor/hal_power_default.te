@@ -1,0 +1,2 @@
+allow hal_power_default touchfeature_device:chr_file { ioctl open read write };
+allowxperm hal_power_default touchfeature_device:chr_file ioctl { 0x5400 0x5403 };

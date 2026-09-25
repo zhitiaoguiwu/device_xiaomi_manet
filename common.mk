@@ -269,8 +269,8 @@ PRODUCT_PACKAGES += \
     WifiResTarget_spf
 
 # Parts
-PRODUCT_PACKAGES += \
-    XiaomiParts
+#PRODUCT_PACKAGES += \
+#    XiaomiParts
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
