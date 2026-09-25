@@ -115,6 +115,8 @@ blob_fixups: blob_fixups_user_type = {
             b'\x1f\x20\x03\xd5',
         ),
     # Avoid the vendor smooth-switch teardown race on the Lineage provider.
+    # Keep multi-camera enabled: disabling it removes the ultrawide physical
+    # camera from the logical camera controls on manet.
     'odm/etc/camera/camxoverridesettings.txt': blob_fixup()
         .regex_replace(
             'enableEarlyPipelineActivate=TRUE',
@@ -125,8 +127,8 @@ blob_fixups: blob_fixups_user_type = {
             'isSwitchAnimationSupported=FALSE',
         )
         .regex_replace(
-            'multiCameraEnable=TRUE',
             'multiCameraEnable=FALSE',
+            'multiCameraEnable=TRUE',
         )
         .regex_replace(
             'sessionMaxFlushWaitTime=1000',
