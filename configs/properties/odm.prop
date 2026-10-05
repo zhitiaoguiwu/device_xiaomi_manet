@@ -26,6 +26,14 @@ persist.vendor.disable_idle_fps.threshold=528
 persist.sys.miui_resolution=1080,2400,420
 
 # Fingerprint
+# Properties consumed by hardware/xiaomi/packages/IFAAService and the
+# HIDL mlipay bridge. Keep these in the IFAA format; the legacy aliases
+# below are still used by the Xiaomi fingerprint stack.
+persist.vendor.sys.fp.vendor=goodix
+persist.vendor.sys.pay.ifaa=1
+ro.hardware.fp.udfps=true
+persist.vendor.sys.fp.udfps.location.X_Y=720,2880
+persist.vendor.sys.fp.udfps.size.width_height=260,260
 persist.vendor.fingerprint.type=udfps_optical
 persist.vendor.fingerprint.sensor_location=720|2880|130
 # Xiaomi's KeyMint/Soter attestation code reads these product identities.
