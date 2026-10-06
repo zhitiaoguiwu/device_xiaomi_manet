@@ -31,6 +31,7 @@ PRODUCT_PACKAGES += \
     sensors.qsh.manet \
     libudfpshandler.manet \
     libar_gpr_shim \
+    vendor.lineage.touch-service.xiaomi \
     libmlipay@1.1-prebuilt \
     mlipayd@1.1 \
     mlipay-hidl-1.1-rc \

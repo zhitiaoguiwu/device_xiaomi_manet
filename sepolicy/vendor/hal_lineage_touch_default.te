@@ -1,0 +1,2 @@
+# The Xiaomi high-touch service writes the Goodix report-rate sysfs control.
+allow hal_lineage_touch_default sysfs_touch_hostprocess:file rw_file_perms;

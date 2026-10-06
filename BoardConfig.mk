@@ -22,6 +22,13 @@ SOONG_CONFIG_NAMESPACES += qtipower
 SOONG_CONFIG_qtipower += mode_ext_lib
 SOONG_CONFIG_qtipower_mode_ext_lib := power_mode_ext
 
+# Expose the Goodix high-touch polling control through the Lineage Xiaomi
+# touch service. The stock THP configuration uses 240 Hz normally and 480 Hz
+# for the high-touch/game profile.
+SOONG_CONFIG_NAMESPACES += XIAOMI_TOUCH
+SOONG_CONFIG_XIAOMI_TOUCH += HIGH_TOUCH_POLLING_PATH
+SOONG_CONFIG_XIAOMI_TOUCH_HIGH_TOUCH_POLLING_PATH := /sys/devices/platform/goodix_ts.0/switch_report_rate
+
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/configs/vintf/compatibility_matrix.mlipay-hidl.xml
 
