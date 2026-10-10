@@ -6,6 +6,7 @@ ro.hardware.camera=xiaomi
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.snapchat.android
 
 # Display
+ro.vendor.sensor.maxbrightness=2866
 vendor.display.enable_qsync_timer=1
 vendor.display.enable_spr=1
 vendor.display.enable_fb_scaling=1
@@ -20,6 +21,18 @@ ro.vendor.mi_sf.ltpo.support=true
 ro.vendor.display.primary_idle_refresh_rate=60,10:528
 ro.vendor.display.idle_default_fps=60
 ro.vendor.display.fod_monitor_default_fps=120
+ro.vendor.display.picture_hdr.support=true
+ro.vendor.display.dolbyvision.support=true
+debug.config.media.video.dolby_vision_suports=true
+ro.vendor.display.switch_resolution.support=1
+ro.vendor.display.mode_change_optimize.enable=true
+ro.vendor.display.adaptce_stc_lut_enable=true
+ro.vendor.display.dobly_dpu.enable=true
+ro.vendor.mi_sf.gallery_p3_dolby_opt=true
+ro.vendor.mi_sf.hdr_enable_flatmode=true
+vendor.display.disable_3d_adaptive_tm=0
+vendor.display.force_tonemapping=1
+vendor.display.use_layer_ext=0
 ro.vendor.dfps.enable=false
 persist.vendor.disable_idle_fps=true
 persist.vendor.disable_idle_fps.threshold=528
