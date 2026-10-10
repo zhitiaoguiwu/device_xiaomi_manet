@@ -12,8 +12,8 @@ include device/xiaomi/sm8650-common/BoardConfigCommon.mk
 # Manet uses the partition geometry from its stock firmware, which differs
 # from the generic LOS24 pineapple common profile.
 BOARD_DTBOIMG_PARTITION_SIZE := 20971520
-BOARD_SUPER_PARTITION_SIZE := 8759646296
-BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 8755451992
+BOARD_SUPER_PARTITION_SIZE := 9126805504
+BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 9116319744
 
 # Manet's touchscreen driver uses the newer xiaomi-touch ioctl payload. Keep
 # the implementation local so the shared common tree remains device-agnostic.
