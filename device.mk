@@ -11,8 +11,6 @@
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     $(LOCAL_PATH)/configs/display/spr_cfg_xiaomi_n11u_42_02_0a_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/spr_cfg_xiaomi_n11u_42_02_0a_cmd_mode_dsc_dsi_panel.xml \
-    $(LOCAL_PATH)/configs/display/dolby_vision.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/dolby_vision.cfg \
-    $(LOCAL_PATH)/configs/display/dolby_vision_persist.cfg:$(TARGET_COPY_OUT_VENDOR)/persist/display/dolby_vision.cfg \
     $(LOCAL_PATH)/configs/init/init.manet-display.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.manet-display.rc \
     $(LOCAL_PATH)/configs/init/init.manet-audio.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.manet-audio.rc \
     $(LOCAL_PATH)/configs/init/ueventd.manet.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.qcom.userdebug.rc
